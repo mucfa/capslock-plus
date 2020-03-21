@@ -767,7 +767,23 @@ keyFunc_unshiftWinMinimizeStack(){
 keyFunc_winTransparent(){
     winTransparent()
 }
+
 keyFunc_redo(){
     SendInput,^{z}
+    return
+}
+
+keyFunc_copy(){
+    SendInput,^{c}
+    return
+}
+
+keyFunc_paste(){
+    SendInput,^{v}
+    return
+}
+
+keyFunc_englishComma(){
+    SendInput,{,}
     return
 }
