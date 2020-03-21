@@ -767,3 +767,7 @@ keyFunc_unshiftWinMinimizeStack(){
 keyFunc_winTransparent(){
     winTransparent()
 }
+keyFunc_redo(){
+    SendInput,^{z}
+    return
+}
